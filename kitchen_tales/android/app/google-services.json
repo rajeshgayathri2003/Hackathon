@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "887026599417",
+    "firebase_url": "https://kitchentales-e9b4a.firebaseio.com",
+    "project_id": "kitchentales-e9b4a",
+    "storage_bucket": "kitchentales-e9b4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887026599417:android:7c86e4be47b80b7936a928",
+        "android_client_info": {
+          "package_name": "com.example.kitchen_tales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887026599417-9tf1e3ffnaao5paift45bpc3plib2hb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHj89gmNss_fo64rjJoG1kQw8rKdG9YHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887026599417-9tf1e3ffnaao5paift45bpc3plib2hb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
