@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class kitchen_tales extends StatelessWidget {
   @override
@@ -21,7 +20,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _currentIndex = 0;
+  int _currentIndex = 0; //don't change
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -36,20 +35,28 @@ class _MyHomePageState extends State<MyHomePage> {
         currentIndex: _currentIndex,
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), title: Text("Account")),
+              backgroundColor: Colors.black,
+              icon: Icon(Icons.account_circle),
+              title: Text("Account")),
           BottomNavigationBarItem(
-              icon: Icon(Icons.bookmarks), title: Text("Recipes")),
+              backgroundColor: Colors.black,
+              icon: Icon(Icons.bookmarks),
+              title: Text("Recipes")),
           BottomNavigationBarItem(
-              icon: Icon(Icons.add_a_photo_rounded), title: Text("Posts")),
+              backgroundColor: Colors.black,
+              icon: Icon(Icons.add_a_photo_rounded),
+              title: Text("Posts")),
           BottomNavigationBarItem(
-              icon: Icon(Icons.movie_filter_rounded), title: Text('Videos')),
+              backgroundColor: Colors.black,
+              icon: Icon(Icons.movie_filter_rounded),
+              title: Text('Videos')),
         ],
         onTap: (index) {
           setState(() {
             _currentIndex = index;
           });
         },
-      ),
+      ), //don't change nav bar
       body: Container(
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(
