@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_tales/ui/detail_screen.dart';
-import 'ui/recipe.dart';
 import 'ui/posts.dart';
 import 'ui/youtube.dart';
 import 'ui/home_screen.dart';
@@ -50,7 +49,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Kitchen Tales", style: TextStyle(color: Colors.black)),
+        title: Text("Kitchen Tales",
+            style: TextStyle(
+              color: Colors.black,
+              fontFamily: 'YanoneKaffeesatz-VariableFont_wght',
+              fontSize: 28.0,
+            )),
         centerTitle: true,
         backgroundColor: Colors.yellowAccent,
         // actions: [

@@ -69,7 +69,11 @@ class _postState extends State<post> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Kitchen Tales", style: TextStyle(color: Colors.black)),
+          title: Text("Kitchen Tales",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontFamily: 'YanoneKaffeesatz-VariableFont_wght',
+                  fontSize: 20.0)),
           centerTitle: true,
           backgroundColor: Colors.yellowAccent,
           // actions:

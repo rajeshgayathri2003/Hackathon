@@ -8,7 +8,7 @@ class player extends StatefulWidget {
 
 class _playerState extends State<player> {
   YoutubePlayerController _controller = YoutubePlayerController(
-      initialVideoId: '5NrYqZCjpN0',
+      initialVideoId: 'oE7ySNKbNXI',
       flags: YoutubePlayerFlags(
         autoPlay: false,
         mute: false,
@@ -17,7 +17,12 @@ class _playerState extends State<player> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dish of the day", style: TextStyle(color: Colors.black)),
+        title: Text("Dish of the day",
+            style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'KaushanScript-Regular',
+                fontSize: 25.0)),
+        backgroundColor: Colors.black,
         centerTitle: true,
       ),
       body: Container(
