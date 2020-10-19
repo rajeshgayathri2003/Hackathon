@@ -54,6 +54,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/background.png
+<<<<<<< Updated upstream
     - images/burger.jpg
     - images/cake.png
     - images/chicken_g.jpg
@@ -61,6 +62,13 @@ flutter:
     - images/spaghetti.jpg
     - images/pizza.jpg
   #   - images/a_dot_ham.jpeg
+=======
+    - images/donuts.jpg
+    - images/harabara.jpg
+    - images/khandvi.jpeg
+    - images/chocwaffle.jpg
+    - images/walnut&dates_cake.jpg
+>>>>>>> Stashed changes
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

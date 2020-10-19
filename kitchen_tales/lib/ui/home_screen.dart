@@ -13,19 +13,19 @@ class _HomeScreenState extends State<HomeScreen> {
 
   ///Image paths and food names
   final images = [
-    "images/burger.jpg",
-    "images/chicken_g.jpg",
-    "images/chiken_f.jpeg",
-    "images/pizza.jpg",
-    "images/spaghetti.jpg",
+    "images/donuts.jpg",
+    "images/harabara.jpg",
+    "images/khandvi.jpg",
+    "images/chocwaffle.jpg",
+    "images/walnut&dates_cake.jpg",
   ];
 
   final foodNames = [
-    "Grilled Burger",
-    "Crispy Fried Chicken",
-    "Grilled Chicken",
-    "Pasta",
-    "Pizza"
+    "Donuts\t -Gayatri Rajesh",
+    "Hara Bhara kabab\t-Shraddha Byandoor ",
+    "Khandvi\t-Gayatri Rajesh",
+    "choco waffle\t-Khushi Kiran",
+    "Walnut&Dates cake\t-Shraddha Byandoor"
   ];
 
   @override
@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: <Widget>[
                       Expanded(
                         child: Text(
-                          "Looking for your favorite meal",
+                          "Look for your wanted recipes",
                           style: GoogleFonts.playfairDisplay(fontSize: 30),
                         ),
                       ),
@@ -210,7 +210,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 16.0),
                                     child: Text(
-                                      "Recipe by Sarah Ahmed",
+                                      "Recipe by Khushi Kiran",
                                       style: GoogleFonts.roboto(
                                           color: Colors.grey[600],
                                           fontSize: 11),
