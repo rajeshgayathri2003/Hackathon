@@ -7,3 +7,5 @@ void main() {
     home: kitchen_tales(),
   ));
 }
+
+void main() => runApp(new recipe());
