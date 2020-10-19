@@ -5,6 +5,7 @@ import 'ui/posts.dart';
 import 'ui/youtube.dart';
 import 'ui/home_screen.dart';
 import 'ui/home.dart';
+import 'ui/home_screen.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -12,7 +13,7 @@ void main() {
   ));
 }
 
-recipe_screen() => runApp(new recipe());
+//recipe_screen() => runApp(new recipe());
 
 class kitchen_tales extends StatelessWidget {
   @override
@@ -42,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           image: DecorationImage(
               image: AssetImage("images/background.png"), fit: BoxFit.cover)),
     ),
-    recipe(),
+    HomeScreen(),
     post(),
     player()
   ]; //don't change the above list

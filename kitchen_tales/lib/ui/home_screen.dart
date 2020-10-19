@@ -1,4 +1,5 @@
-import 'package:chat_tut/screens/detail_screen.dart';
+import 'package:kitchen_tales/ui/detail_screen.dart';
+import 'package:screen/screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -29,6 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    int _currentIndex = 0;
+
     ///For screen size
     final size = MediaQuery.of(context).size;
     return Scaffold(
@@ -156,10 +159,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
                         return GestureDetector(
-                          onTap: (){
-                            Navigator.push(context, MaterialPageRoute(
-                              builder: (context) => DetailScreen(images[4 - index])
-                            ));
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        DetailScreen(images[4 - index])));
                           },
                           child: AspectRatio(
                               aspectRatio: 0.9 / 1,
@@ -176,7 +181,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                             images[4 - index],
                                             fit: BoxFit.cover,
                                           ),
-                                          borderRadius: BorderRadius.circular(30),
+                                          borderRadius:
+                                              BorderRadius.circular(30),
                                         ),
                                       ),
                                       tag: images[4 - index],
@@ -206,7 +212,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                     child: Text(
                                       "Recipe by Sarah Ahmed",
                                       style: GoogleFonts.roboto(
-                                          color: Colors.grey[600], fontSize: 11),
+                                          color: Colors.grey[600],
+                                          fontSize: 11),
                                     ),
                                   )
                                 ],
