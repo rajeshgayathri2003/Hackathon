@@ -22,57 +22,40 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
-  final tabs = [
-    Container(
-      constraints: BoxConstraints.expand(),
-      decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("images/background.png"), fit: BoxFit.cover)),
-    ),
-    Center(child: Text('Recipes')),
-    Center(
-      child: Text('Posts'),
-    ),
-    Center(
-      child: Text('Youtube'),
-    )
-  ];
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Kitchen Tales", style: TextStyle(color: Colors.black)),
-          centerTitle: true,
-          backgroundColor: Colors.yellowAccent,
-          // actions: [
-          //   IconButton(icon: Icon(Icons.add_a_photo_sharp), onPressed: null)
-          // ],
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          items: [
-            BottomNavigationBarItem(
-                backgroundColor: Colors.black,
-                icon: Icon(Icons.account_circle),
-                title: Text("Account")),
-            BottomNavigationBarItem(
-                backgroundColor: Colors.black,
-                icon: Icon(Icons.bookmarks),
-                title: Text("Recipes")),
-            BottomNavigationBarItem(
-                backgroundColor: Colors.black,
-                icon: Icon(Icons.add_a_photo_rounded),
-                title: Text("Posts")),
-            BottomNavigationBarItem(
-                backgroundColor: Colors.black,
-                icon: Icon(Icons.movie_filter_rounded),
-                title: Text('Videos')),
-          ],
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-        ),
-        body: tabs[_currentIndex]);
+      appBar: AppBar(
+        title: Text("Kitchen Tales", style: TextStyle(color: Colors.black)),
+        centerTitle: true,
+        backgroundColor: Colors.yellowAccent,
+        // actions: [
+        //   IconButton(icon: Icon(Icons.add_a_photo_sharp), onPressed: null)
+        // ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle), title: Text("Account")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.bookmarks), title: Text("Recipes")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.add_a_photo_rounded), title: Text("Posts")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.movie_filter_rounded), title: Text('Videos')),
+        ],
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+      ),
+      body: Container(
+        constraints: BoxConstraints.expand(),
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("images/background.png"), fit: BoxFit.cover)),
+      ),
+    );
   }
 }
