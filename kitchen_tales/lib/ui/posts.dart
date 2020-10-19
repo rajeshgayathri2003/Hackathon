@@ -74,22 +74,46 @@ class _postState extends State<post> {
           backgroundColor: Colors.yellowAccent,
           // actions:
         ),
-        body: Column(children: <Widget>[
-          (imageUrl != null)
-              ? Image.network(imageUrl)
-              : Placeholder(
-                  fallbackHeight: 200.0,
-                  fallbackWidth: double.infinity,
-                ),
-          SizedBox(
-            height: 20.0,
+        body: Container(
+          constraints: BoxConstraints.expand(),
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                height: 100,
+              ),
+              Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Container(
+                          padding: EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            color: Colors.amber,
+                          ))
+                    ],
+                  )),
+              (imageUrl != null)
+                  ? Image.network(imageUrl)
+                  : Placeholder(
+                      fallbackHeight: 200.0,
+                      fallbackWidth: double.infinity,
+                    ),
+              SizedBox(
+                height: 20.0,
+              ),
+              RaisedButton(
+                  child: Text('Upload Image'),
+                  color: Colors.lightBlue,
+                  onPressed: () {
+                    _showChoiceDialog(context);
+                  })
+            ],
           ),
-          RaisedButton(
-              child: Text('Upload Image'),
-              color: Colors.lightBlue,
-              onPressed: () {
-                _showChoiceDialog(context);
-              })
-        ]));
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("images/background.png"),
+                  fit: BoxFit.cover)),
+        ));
   }
 }
