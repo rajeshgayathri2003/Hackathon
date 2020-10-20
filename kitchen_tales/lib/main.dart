@@ -5,6 +5,8 @@ import 'ui/youtube.dart';
 import 'ui/home_screen.dart';
 import 'ui/home.dart';
 import 'ui/home_screen.dart';
+import 'ui/account.dart';
+import 'ui/quotes.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -36,12 +38,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
   final tabs = [
-    Container(
-      constraints: BoxConstraints.expand(),
-      decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("images/background.png"), fit: BoxFit.cover)),
-    ),
+    Wisdom(),
+    BizCard(),
     HomeScreen(),
     post(),
     player()
@@ -64,6 +62,10 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         items: [
+          BottomNavigationBarItem(
+              backgroundColor: Colors.black,
+              icon: Icon(Icons.home),
+              title: Text("Home")),
           BottomNavigationBarItem(
               backgroundColor: Colors.black,
               icon: Icon(Icons.account_circle),
