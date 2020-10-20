@@ -14,14 +14,14 @@ class _HomeScreenState extends State<HomeScreen> {
   ///Image paths and food names
   final images = [
     "images/donuts.jpg",
-    "images/taco.jpg",
     "images/khandvi.jpg",
     "images/chocwaffle.jpg",
     "images/pizza.jpg",
+    "images/taco.jpg"
   ];
 
   final foodNames = [
-    "Donuts\n -Gayathri Rajesh",
+    "Donuts\n-Gayathri Rajesh",
     "Khandvi\n-Gayathri Rajesh",
     "choco waffle\n-Khushi Kiran",
     "Pizza\n-Shraddha Byndoor",
@@ -206,16 +206,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           fontWeight: FontWeight.bold),
                                     ),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 16.0),
-                                    child: Text(
-                                      "Recipe by Khushi Kiran",
-                                      style: GoogleFonts.roboto(
-                                          color: Colors.grey[600],
-                                          fontSize: 11),
-                                    ),
-                                  )
+                                  
                                 ],
                               )),
                         );
