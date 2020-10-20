@@ -64,7 +64,7 @@ class DetailScreen extends StatelessWidget {
                           ],
                         ),
                         Text(
-                          "By Shraddha Byndoor",
+                          "By Khushi Kiran",
                           style: GoogleFonts.roboto(
                             fontWeight: FontWeight.w300,
                           ),

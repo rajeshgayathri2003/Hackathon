@@ -132,7 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 16.0),
                                   child: Text(
-                                    "${foodNames[index]} Recipes",
+                                    "${foodNames[index]}",
                                     style: GoogleFonts.roboto(
                                         color: Colors.grey[800], fontSize: 11),
                                   ),
@@ -206,7 +206,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                           fontWeight: FontWeight.bold),
                                     ),
                                   ),
-                                  
                                 ],
                               )),
                         );
