@@ -50,7 +50,7 @@ class DetailScreen extends StatelessWidget {
                         Row(
                           children: <Widget>[
                             Text(
-                              "Farmhouse special",
+                              "Choco Waffles",
                               style: GoogleFonts.roboto(
                                   fontSize: 22, fontWeight: FontWeight.bold),
                             ),
