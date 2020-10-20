@@ -60,6 +60,12 @@ flutter:
     - images/chocwaffle.jpg
     - images/pizza.jpg
     - images/account.jpg
+    - images/harabara.jpg
+    - images/khandvi.jpg
+    - images/chocwaffle.jpg
+    - images/walnut&dates_cake.jpg
+    - images/chakli.jpg
+    - images/vanilla.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -81,7 +87,13 @@ fonts:
       - asset: fonts/NotoSansHK-Regular.otf
   - family: KaushanScript-Regular
     fonts:
-      - assets: fonts/KaushanScript-Regular.ttf
+      - asset: fonts/KaushanScript-Regular.ttf
+  - family: DancingScript- VariableFont_wght
+    fonts:
+      - asset: fonts/DancingScript- VariableFont_wght.ttf
+  - family: SourceSerifPro - BoldItalic
+    fonts:
+      - asset: fonts/SourceSerifPro - BoldItalic.ttf
 
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf

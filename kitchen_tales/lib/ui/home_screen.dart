@@ -21,11 +21,11 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   final foodNames = [
-    "Donuts\n -Gayatri Rajesh",
-    "Taco Mexicana\n-Shraddha Byandoor ",
-    "Khandvi\n-Gayatri Rajesh",
+    "Donuts\n -Gayathri Rajesh",
+    "Khandvi\n-Gayathri Rajesh",
     "choco waffle\n-Khushi Kiran",
-    "Pizza\n-Shraddha Byandoor"
+    "Pizza\n-Shraddha Byndoor",
+    "Taco Mexicana\n-Shraddha Byndoor ",
   ];
 
   @override
